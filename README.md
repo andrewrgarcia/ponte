@@ -24,6 +24,7 @@ pip install ponte
 
 For full application, i.e. passing array structures between Python and C++ code, see [bridge](https://github.com/andrewrgarcia/bridge)
 
+Try running this code in a terminal
 ```ruby
 import ponte as bridge
 import numpy as np
@@ -37,22 +38,4 @@ bridge.tojson('sample.json',X)
 array_form = bridge.jsonload('sample.json')
 'print vector'
 print('array:\n',array_form)
-
-'''
-array to DOK:
-{
-	"map": [
-		[1],
-		[4],
-		[5],
-		[8],
-		[9]
-	],
-	"value": [2, 3, 2, 2, 2],
-	"odims": [10]
-}
-
-DOK to array:
-[0. 2. 0. 0. 3. 2. 0. 0. 2. 2.]
-'''
 ```
